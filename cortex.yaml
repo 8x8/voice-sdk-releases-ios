@@ -1,0 +1,12 @@
+---
+openapi: 3.0.1
+info:
+  title: voice-sdk-releases-ios
+  description: voice-sdk-releases-ios
+  x-cortex-git:
+    github:
+      repository: 8x8/voice-sdk-releases-ios
+  x-cortex-tag: voice-sdk-releases-ios
+  x-cortex-owners:
+    - type: EMAIL
+      email: oleksandr.trishyn@8x8.com
