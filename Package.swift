@@ -12,8 +12,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Wavecell",
-            url: "https://github.com/8x8/voice-sdk-releases-ios/releases/download/0.2.4/Wavecell.xcframework.zip",
-            checksum: "88b499fc14cc4238dd75e40498cf50706ee1b103edb12055110f9b9f1d06ce49"
+            url: "https://github.com/8x8/voice-sdk-releases-ios/releases/download/0.2.6/Wavecell.xcframework.zip",
+            checksum: "5b29c6686a6d44f268255b87a2fd2233ad6faedbdcb2ad1b29bcb42cc8b2542e"
         )
     ]
 )
