@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VoiceCallMutedStateObserverProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/VoiceCallMutedStateObserverProtocol" class="dashAnchor"></a>
+    <a title="VoiceCallMutedStateObserverProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Voice SDK</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Wavecell Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        VoiceCallMutedStateObserverProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AuthenticationContext.html">AuthenticationContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK.html">VoiceSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK/State.html">– State</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CallActionCompletionStatus.html">CallActionCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallConnectionQuality.html">CallConnectionQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallDirection.html">CallDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallFailedReason.html">CallFailedReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallMutedState.html">CallMutedState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallType.html">CallType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType/Reason.html">– Reason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InboundCallPath.html">InboundCallPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule.html">LogModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/rtc.html">– rtc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/voice.html">– voice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PushNotificationEnvironment.html">PushNotificationEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VoiceCallState.html">VoiceCallState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/DeviceComponentFactory">DeviceComponentFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/DeviceRegistrationData">DeviceRegistrationData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/EmptyResponse">EmptyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/ObjectResponse">ObjectResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/SimulatorComponentFactory">SimulatorComponentFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/WavecellVoiceCall">WavecellVoiceCall</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CallSetObserverProtocol.html">CallSetObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IncomingCallContext.html">IncomingCallContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkReachabilityObserverProtocol.html">NetworkReachabilityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushNotificationObserverProtocol.html">PushNotificationObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCall.html">VoiceCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallConnectionQualityObserverProtocol.html">VoiceCallConnectionQualityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallMutedStateObserverProtocol.html">VoiceCallMutedStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallObserverProtocol.html">VoiceCallObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallStateObserverProtocol.html">VoiceCallStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceSDKObserverProtocol.html">VoiceSDKObserverProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CallKitOptions.html">CallKitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogMessageContext.html">LogMessageContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OutgoingCallParameters.html">OutgoingCallParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/ContactResolverCallback">ContactResolverCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/LogMessageCallback">LogMessageCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/VoiceCallConnectionQualityChangedCallback">VoiceCallConnectionQualityChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/VoiceCallMutedStateChangedCallback">VoiceCallMutedStateChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/VoiceCallStateChangedCallback">VoiceCallStateChangedCallback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>VoiceCallMutedStateObserverProtocol</h1>
+            <p>The client object may adopt this protocol to observe the microphone state change.
+To receive notification the client object should be registered at <code><a href="../Protocols/VoiceCall.html">VoiceCall</a></code> object as an observer.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/handleCallMutedStateChanged(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">handleCallMutedStateChanged(_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">8x8, Inc</a>. All rights reserved. (Last updated: 2023-03-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
