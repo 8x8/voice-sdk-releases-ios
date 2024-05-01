@@ -1,1 +1,1 @@
-# voice-sdk-ios
+This repository contains the release packages of 8x8 Voice SDK for iOS. Please refer to the [API License](API-LICENSE.md) and [SDK License](SDK-LICENSE.md) for the license information and to the [documentation](https://developer.8x8.com/connect/docs/overview) for in-depth guide on setting up and integrating the Voice SDK in your own application.
