@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VoiceSDK Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/VoiceSDK" class="dashAnchor"></a>
+    <a title="VoiceSDK Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Voice SDK</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Wavecell Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        VoiceSDK Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AuthenticationContext.html">AuthenticationContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK.html">VoiceSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK/State.html">– State</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CallActionCompletionStatus.html">CallActionCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallConnectionQuality.html">CallConnectionQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallDirection.html">CallDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallFailedReason.html">CallFailedReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallMutedState.html">CallMutedState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallType.html">CallType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType/Reason.html">– Reason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InboundCallPath.html">InboundCallPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule.html">LogModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/rtc.html">– rtc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/voice.html">– voice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PushNotificationEnvironment.html">PushNotificationEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTCNetworkInterface.html">RTCNetworkInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VoiceCallState.html">VoiceCallState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CallSetObserverProtocol.html">CallSetObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IncomingCallContext.html">IncomingCallContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkReachabilityObserverProtocol.html">NetworkReachabilityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushNotificationObserverProtocol.html">PushNotificationObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCall.html">VoiceCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallConnectionQualityObserverProtocol.html">VoiceCallConnectionQualityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallMutedStateObserverProtocol.html">VoiceCallMutedStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallObserverProtocol.html">VoiceCallObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallStateObserverProtocol.html">VoiceCallStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceSDKObserverProtocol.html">VoiceSDKObserverProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CallKitOptions.html">CallKitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogMessageContext.html">LogMessageContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OutgoingCallParameters.html">OutgoingCallParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell23ContactResolverCallbacka">ContactResolverCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell18LogMessageCallbacka">LogMessageCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell41VoiceCallConnectionQualityChangedCallbacka">VoiceCallConnectionQualityChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell34VoiceCallMutedStateChangedCallbacka">VoiceCallMutedStateChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell29VoiceCallStateChangedCallbacka">VoiceCallStateChangedCallback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>VoiceSDK</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">VoiceSDK</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>VoiceSDK</code> is an SDK facade object.
+The inception point of all communications between client and SDK.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC5stateAC5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC5stateAC5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>state</strong> refects the current SDK state. The client may adopt
+<code><a href="../Protocols/VoiceSDKObserverProtocol.html">VoiceSDKObserverProtocol</a></code> and subscribe for changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Classes/VoiceSDK/State.html">State</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC13configurationAA13ConfigurationVvp"></a>
+                    <a name="//apple_ref/swift/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC13configurationAA13ConfigurationVvp">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>configuration</strong> contains SDK settings. It should be set at least once before activation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Structs/Configuration.html">Configuration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC21authenticationContextAA014AuthenticationE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/authenticationContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC21authenticationContextAA014AuthenticationE0Cvp">authenticationContext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>authenticationContext</strong> contains authentication token. It should be set at least once before activation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authenticationContext</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationContext.html">AuthenticationContext</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC25networkReachabilityStatusAA0eF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/networkReachabilityStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC25networkReachabilityStatusAA0eF0Ovp">networkReachabilityStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>networkReachabilityStatus</strong> refelects the current network reachability status. The client may adopt
+<code><a href="../Protocols/NetworkReachabilityObserverProtocol.html">NetworkReachabilityObserverProtocol</a></code> and subscribe for changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">networkReachabilityStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/ReachabilityStatus.html">ReachabilityStatus</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC5callsSayAA0B4Call_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/calls" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC5callsSayAA0B4Call_pGvp">calls</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>calls</strong> contains active calls. The client may adopt
+<code><a href="../Protocols/CallSetObserverProtocol.html">CallSetObserverProtocol</a></code> and  subscribe for changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">calls</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/VoiceCall.html">VoiceCall</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC9pushTokenSSvp"></a>
+                    <a name="//apple_ref/swift/Property/pushToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC9pushTokenSSvp">pushToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>pushToken</strong> contains push notification token (PushKit). The client may adopt
+<code><a href="../Protocols/PushNotificationObserverProtocol.html">PushNotificationObserverProtocol</a></code> and  subscribe for changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pushToken</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC21audioSessionActivated7Combine19CurrentValueSubjectCySbs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/audioSessionActivated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC21audioSessionActivated7Combine19CurrentValueSubjectCySbs5NeverOGvp">audioSessionActivated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">audioSessionActivated</span><span class="p">:</span> <span class="kt">CurrentValueSubject</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC7preinityyFZ"></a>
+                    <a name="//apple_ref/swift/Method/preinit()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC7preinityyFZ">preinit()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>preinit()</code> function prepares the SDK for receiving VoIP push notifications.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The application should call this function asap in <code>application(_:didFinishLaunchingWithOptions:)</code>.
+But even so, it is recommended to setup <code><a href="../Classes/VoiceSDK.html#/s:8Wavecell8VoiceSDKC18logMessageCallbackySS_SSAA8LogLevelOAA0gE7ContextVSgtcSgvpZ">logMessageCallback</a></code> in the first place.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">preinit</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>shared</strong> is a reference on a <code>VoiceSDK</code> singleton (SDK facade object).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">VoiceSDK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Functions"></a>
+                <a name="//apple_ref/swift/Section/Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Functions"></a>
+                  <h3 class="section-name"><span>Functions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC8activate10completionyys6ResultOyytAA9ErrorTypeOGc_tF"></a>
+                    <a name="//apple_ref/swift/Method/activate(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC8activate10completionyys6ResultOyytAA9ErrorTypeOGc_tF">activate(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>activate(completion:)</code> function creates (setup) the internal SDK components.
+It should be called by app on user login (autologin) completion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activate</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion is called on main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It contains the SDK activation result.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC10deactivate10completionyys6ResultOyytAA9ErrorTypeOGc_tF"></a>
+                    <a name="//apple_ref/swift/Method/deactivate(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC10deactivate10completionyys6ResultOyytAA9ErrorTypeOGc_tF">deactivate(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>deactivate(completion:)</code> function destroys the internal SDK components.
+It should be called by app upon user logout.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deactivate</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion is called on main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It contains the SDK deactivation result.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC9placeCall4with10completionyAA08OutgoingE10ParametersV_ys6ResultOyAA0bE0_pAA9ErrorTypeOGctF"></a>
+                    <a name="//apple_ref/swift/Method/placeCall(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC9placeCall4with10completionyAA08OutgoingE10ParametersV_ys6ResultOyAA0bE0_pAA9ErrorTypeOGctF">placeCall(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>placeCall(with:completion)</code> function places outgoing call.</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    The <code>VoiceSDK</code> object should be in <code>active</code> state.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">placeCall</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Structs/OutgoingCallParameters.html">OutgoingCallParameters</a></span><span class="p">,</span>
+                      <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/VoiceCall.html">VoiceCall</a></span><span class="p">,</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It specifies destination contact (callee), call type, etc.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion is called on main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The result contains <code><a href="../Protocols/VoiceCall.html">VoiceCall</a></code> object in case of success, <code><a href="../Enums/ErrorType.html">ErrorType</a></code> value in case of failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC17updatePhoneNumber_10completionySSSg_ys6ResultOyytAA9ErrorTypeOGctF"></a>
+                    <a name="//apple_ref/swift/Method/updatePhoneNumber(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC17updatePhoneNumber_10completionySSSg_ys6ResultOyytAA9ErrorTypeOGctF">updatePhoneNumber(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>updatePhoneNumber(:)</code> function updates phone number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updatePhoneNumber</span><span class="p">(</span><span class="n">_</span> <span class="nv">number</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                              <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>number</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It updates (sets) the current device phone number.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion is called on main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The result is either <code>success</code> or <code>failure</code> with <code><a href="../Enums/ErrorType.html">ErrorType</a></code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC21updateInboundCallPath_10completionyAA0efG0O_ys6ResultOyytAA9ErrorTypeOGctF"></a>
+                    <a name="//apple_ref/swift/Method/updateInboundCallPath(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC21updateInboundCallPath_10completionyAA0efG0O_ys6ResultOyytAA9ErrorTypeOGctF">updateInboundCallPath(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>updateInboundCallPath(:)</code> function updates inbound call path.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateInboundCallPath</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt"><a href="../Enums/InboundCallPath.html">InboundCallPath</a></span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It updates (sets) the current prefered path for receiving the incoming call on this device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion is called on main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The result is either <code>success</code> or <code>failure</code> with <code><a href="../Enums/ErrorType.html">ErrorType</a></code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC7versionSSyF"></a>
+                    <a name="//apple_ref/swift/Method/version()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC7versionSSyF">version()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>version()</code> function returns Voice SDK version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string value indicating the Voice SDK version.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC17voiceStackVersionSSyF"></a>
+                    <a name="//apple_ref/swift/Method/voiceStackVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC17voiceStackVersionSSyF">voiceStackVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>voiceStackVersion()</code> function returns version of Voice Stack used by Voice SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">voiceStackVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string value indicating the version or Voice Stack.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Callbacks"></a>
+                <a name="//apple_ref/swift/Section/Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Callbacks"></a>
+                  <h3 class="section-name"><span>Callbacks</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC18logMessageCallbackySS_SSAA8LogLevelOAA0gE7ContextVSgtcSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/logMessageCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC18logMessageCallbackySS_SSAA8LogLevelOAA0gE7ContextVSgtcSgvpZ">logMessageCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>logMessageCallback</strong> is used to route SDK log messages to client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">logMessageCallback</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Wavecell18LogMessageCallbacka">LogMessageCallback</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC23contactResolverCallbackyAA19IncomingCallContext_p_yAA7Contact_pSgcSgtcSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/contactResolverCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC23contactResolverCallbackyAA19IncomingCallContext_p_yAA7Contact_pSgcSgtcSgvpZ">contactResolverCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>contactResolverCallback</strong> is used to request Contact Info from client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">contactResolverCallback</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Wavecell23ContactResolverCallbacka">ContactResolverCallback</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC33audioSessionConfigurationCallbackyAA05AudioE8Protocol_pcSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/audioSessionConfigurationCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC33audioSessionConfigurationCallbackyAA05AudioE8Protocol_pcSgvpZ">audioSessionConfigurationCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>audioSessionConfigurationCallback</strong> is used to let client configure audio session for call.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">audioSessionConfigurationCallback</span><span class="p">:</span> <span class="kt">AudioSessionConfigurationCallback</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Notifications"></a>
+                <a name="//apple_ref/swift/Section/Notifications" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Notifications"></a>
+                  <h3 class="section-name"><span>Notifications</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC11addObserveryyyXlF"></a>
+                    <a name="//apple_ref/swift/Method/addObserver(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC11addObserveryyyXlF">addObserver(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>addObserver(_:)</code> function adds observer object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The weak reference is stored.
+
+</div><div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <p>In order to be notified the observer should adopt at least one the following protocols:</p>
+
+</div><ul>
+<li><p><code><a href="../Protocols/VoiceSDKObserverProtocol.html">VoiceSDKObserverProtocol</a></code></p></li>
+<li><p><code><a href="../Protocols/CallSetObserverProtocol.html">CallSetObserverProtocol</a></code></p></li>
+<li><p><code><a href="../Protocols/NetworkReachabilityObserverProtocol.html">NetworkReachabilityObserverProtocol</a></code></p></li>
+<li><p><code><a href="../Protocols/PushNotificationObserverProtocol.html">PushNotificationObserverProtocol</a></code></p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addObserver</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reference on the object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC14removeObserveryyyXlF"></a>
+                    <a name="//apple_ref/swift/Method/removeObserver(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC14removeObserveryyyXlF">removeObserver(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>removeObserver(_:)</code> function removes observer object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeObserver</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reference on the object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Nested%20Type"></a>
+                <a name="//apple_ref/swift/Section/Nested Type" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Nested%20Type"></a>
+                  <h3 class="section-name"><span>Nested Type</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell8VoiceSDKC5StateO"></a>
+                    <a name="//apple_ref/swift/Enum/State" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell8VoiceSDKC5StateO">State</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/VoiceSDK.html">VoiceSDK</a></code> object state</p>
+
+                        <a href="../Classes/VoiceSDK/State.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">8x8, Inc</a>. All rights reserved. (Last updated: 2024-04-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

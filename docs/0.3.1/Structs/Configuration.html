@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Configuration Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Configuration" class="dashAnchor"></a>
+    <a title="Configuration Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Voice SDK</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Wavecell Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Configuration Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AuthenticationContext.html">AuthenticationContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK.html">VoiceSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VoiceSDK/State.html">– State</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CallActionCompletionStatus.html">CallActionCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallConnectionQuality.html">CallConnectionQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallDirection.html">CallDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallFailedReason.html">CallFailedReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallMutedState.html">CallMutedState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallType.html">CallType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType/Reason.html">– Reason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InboundCallPath.html">InboundCallPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule.html">LogModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/rtc.html">– rtc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogModule/voice.html">– voice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PushNotificationEnvironment.html">PushNotificationEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTCNetworkInterface.html">RTCNetworkInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VoiceCallState.html">VoiceCallState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CallSetObserverProtocol.html">CallSetObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IncomingCallContext.html">IncomingCallContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkReachabilityObserverProtocol.html">NetworkReachabilityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushNotificationObserverProtocol.html">PushNotificationObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCall.html">VoiceCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallConnectionQualityObserverProtocol.html">VoiceCallConnectionQualityObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallMutedStateObserverProtocol.html">VoiceCallMutedStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallObserverProtocol.html">VoiceCallObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceCallStateObserverProtocol.html">VoiceCallStateObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VoiceSDKObserverProtocol.html">VoiceSDKObserverProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CallKitOptions.html">CallKitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogMessageContext.html">LogMessageContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OutgoingCallParameters.html">OutgoingCallParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell23ContactResolverCallbacka">ContactResolverCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell18LogMessageCallbacka">LogMessageCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell41VoiceCallConnectionQualityChangedCallbacka">VoiceCallConnectionQualityChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell34VoiceCallMutedStateChangedCallbacka">VoiceCallMutedStateChangedCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8Wavecell29VoiceCallStateChangedCallbacka">VoiceCallStateChangedCallback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Configuration</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Configuration</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            <p>The SDK configuration object.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV9accountIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/accountId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV9accountIdSSvp">accountId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The account unique identifier (8x8_test, etc).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">accountId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV6userIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/userId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV6userIdSSvp">userId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user unique identifier (user01, user02, etc).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV11displayNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/displayName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV11displayNameSSvp">displayName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user display name. The remote peer will see this name on the incoming call screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV11phoneNumberSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/phoneNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV11phoneNumberSSSgvp">phoneNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The mobile device phone number (if available).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">phoneNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV7callKitAA04CallD7OptionsVvp"></a>
+                    <a name="//apple_ref/swift/Property/callKit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV7callKitAA04CallD7OptionsVvp">callKit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The CallKit configuration options (application name, ringtone, etc).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">callKit</span><span class="p">:</span> <span class="kt"><a href="../Structs/CallKitOptions.html">CallKitOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV11appBundleIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/appBundleId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV11appBundleIdSSvp">appBundleId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The client application bundle id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appBundleId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV15pushEnvironmentAA016PushNotificationD0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pushEnvironment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV15pushEnvironmentAA016PushNotificationD0OSgvp">pushEnvironment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The push environment (<code>sandbox</code> or <code>production</code>) to be used for sending push notification to this device.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    When an iOS application is code signed, it is the embedded Provisioning Profile that will specify which Apple Push Notification Service Environment (APS Environment) the acquired push notification device token will be bound to. Depending on how an application is provisioned it has an effect on what should be set to <strong>pushEnvironment</strong> property. For example if your application is signed with a <em>Development</em> provisioning profile it will be bound to the APS Development environment. If it’s code signed with a <em>Distribution</em> provisioning profile it will be bound
+to the APS Production environment.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pushEnvironment</span><span class="p">:</span> <span class="kt"><a href="../Enums/PushNotificationEnvironment.html">PushNotificationEnvironment</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV15inboundCallPathAA07InbounddE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/inboundCallPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV15inboundCallPathAA07InbounddE0Ovp">inboundCallPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The inbound call path (<code>voip</code>, <code>pstn</code>, <code>voipWithFallbackToPSTN</code>) to be used for routing the incoming call to this device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inboundCallPath</span><span class="p">:</span> <span class="kt"><a href="../Enums/InboundCallPath.html">InboundCallPath</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV10serviceUrlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV10serviceUrlSSvp">serviceUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The service API url.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">serviceUrl</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Wavecell13ConfigurationV9accountId04userD011displayName11phoneNumber7callKit09appBundleD015pushEnvironment15inboundCallPath10serviceUrlACSS_S3SSgAA0qK7OptionsVSSAA016PushNotificationO0OSgAA07InboundqR0OSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(accountId:userId:displayName:phoneNumber:callKit:appBundleId:pushEnvironment:inboundCallPath:serviceUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Wavecell13ConfigurationV9accountId04userD011displayName11phoneNumber7callKit09appBundleD015pushEnvironment15inboundCallPath10serviceUrlACSS_S3SSgAA0qK7OptionsVSSAA016PushNotificationO0OSgAA07InboundqR0OSStcfc">init(accountId:<wbr>userId:<wbr>displayName:<wbr>phoneNumber:<wbr>callKit:<wbr>appBundleId:<wbr>pushEnvironment:<wbr>inboundCallPath:<wbr>serviceUrl:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">phoneNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">callKit</span><span class="p">:</span> <span class="kt"><a href="../Structs/CallKitOptions.html">CallKitOptions</a></span><span class="p">,</span>
+            <span class="nv">appBundleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">pushEnvironment</span><span class="p">:</span> <span class="kt"><a href="../Enums/PushNotificationEnvironment.html">PushNotificationEnvironment</a></span><span class="p">?,</span>
+            <span class="nv">inboundCallPath</span><span class="p">:</span> <span class="kt"><a href="../Enums/InboundCallPath.html">InboundCallPath</a></span><span class="p">,</span>
+            <span class="nv">serviceUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">8x8, Inc</a>. All rights reserved. (Last updated: 2024-04-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
