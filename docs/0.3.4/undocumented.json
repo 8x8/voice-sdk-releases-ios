@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/RTC/RTC/Sources/Authentication/RTCAuthenticationContext.swift",
+      "line": 19,
+      "symbol": "AuthenticationContext.jwtToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/RTC/RTC/Sources/Authentication/RTCAuthenticationContext.swift",
+      "line": 32,
+      "symbol": "AuthenticationContext.callback",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/RTC/RTC/Sources/Reachability/RTCReachability.swift",
+      "line": 33,
+      "symbol": "RTCNetworkInterface",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/RTC/RTC/Sources/Reachability/RTCReachability.swift",
+      "line": 34,
+      "symbol": "RTCNetworkInterface.cellular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/RTC/RTC/Sources/Reachability/RTCReachability.swift",
+      "line": 35,
+      "symbol": "RTCNetworkInterface.wifi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios/SDKs/Wavecell/Wavecell/Sources/VoiceSDK.swift",
+      "line": 137,
+      "symbol": "VoiceSDK.audioSessionActivated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jenkins/github-action-runners/voice-sdk-ios-ro-2.1/_work/voice-sdk-ios/voice-sdk-ios"
+}
